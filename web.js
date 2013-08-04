@@ -4,6 +4,7 @@ var fs = require('fs');
 
 
 var app = express();//express.createServer(express.logger());
+app.use(express.logger());
 
 var indexFile = fs.readFileSync('./index.html').toString();
 
